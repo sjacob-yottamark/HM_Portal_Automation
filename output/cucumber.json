@@ -1,0 +1,323 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11887842922,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to harvestmark portal",
+            "match": {
+              "location": "HMPortalSteps.user_navigates_to_harvestmark_portal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1551224509,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the username as \"dev@yottamark.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dev@yottamark.com",
+                  "offset": 29
+                }
+              ],
+              "location": "HMPortalSteps.user_enters_the_admin_username(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 699089909,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters the passord as \"bbb123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bbb123",
+                  "offset": 28
+                }
+              ],
+              "location": "HMPortalSteps.user_enters_the_admin_password(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4920104802,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on the sign in button",
+            "match": {
+              "location": "HMPortalSteps.user_clicks_on_the_sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2472731915,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be taken to the successful login page",
+            "match": {
+              "location": "HMPortalSteps.user_should_be_taken_to_the_successful_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23153647810,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HMPortalSteps.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Verify all the links on the Insights page",
+        "description": "",
+        "id": "login-into-hm-portal-and-perform-automate-regression;verify-all-the-links-on-the-insights-page",
+        "after": [
+          {
+            "result": {
+              "duration": 4859476515,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HMPortalSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11135060346,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on Insights Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Insights_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8965472481,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click on Markets link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Markets_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8978820252,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on Ratings Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Ratings_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9727134189,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on Containers Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Containers_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9381141082,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on Devices Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Devices_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8617592246,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on Programs Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Programs_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7028711353,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 37,
+                "value": "#Then I click on Specification Management Link"
+              }
+            ],
+            "line": 38,
+            "name": "I click on Insights Products Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Insights_Products_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6040746303,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I click on Locations Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Locations_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7260926591,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on DC Inspection Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_DC_Inspection_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4420743560,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click on Uploads Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Uploads_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6648360926,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click on Watched Products Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Watched_Products_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8817952092,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I click on Edit Inspections Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Edit_Inspections_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10309148569,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I click on Supplier Contacts Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Supplier_Contacts_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16521676369,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I click on Inspection Minimums Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Inspection_Minimums_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10901310137,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click on Notification Template Manager Link",
+            "match": {
+              "location": "HMPortalSteps.i_click_on_Notification_Template_Manager_Link()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@insightslinks"
+          }
+        ]
+      }
+    ],
+    "name": "Login into HM Portal and Perform Automate Regression",
+    "description": "Login into HM Portal and Perform Automate Regression",
+    "id": "login-into-hm-portal-and-perform-automate-regression",
+    "keyword": "Feature",
+    "uri": "HMPortal.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@runall"
+      }
+    ]
+  }
+]

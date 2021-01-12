@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Harvestmark Suite" duration-ms="197752" started-at="2020-10-14T18:36:14Z" finished-at="2020-10-14T18:39:32Z">
+    <groups>
+    </groups>
+    <test name="Harvestmark Automation Test" duration-ms="197752" started-at="2020-10-14T18:36:14Z" finished-at="2020-10-14T18:39:32Z">
+    </test> <!-- Harvestmark Automation Test -->
+  </suite> <!-- Harvestmark Suite -->
+</testng-results>

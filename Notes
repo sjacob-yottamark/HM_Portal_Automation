@@ -1,0 +1,24 @@
+/Users/sjacob/Development/2020/iFoods_Automation/HM_Portal_Automation
+
+mvn clean compile test
+
+
+Alert handle Lesson 62
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>5.7.0</version>
+</dependency>
+
+<plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+
+//System.setProperty("webdriver.gecko.driver", "\\Users\\sjacob\\Development\\2020\\iFoods_Automation\\HM_Portal_Automation\\src\\test\\java\\HM_Portal_Automation\\resource\\geckodriver");
+		//System.setProperty("webdriver.firefox.bin", "/Users/sjacob/Development/2020/iFoods_Automation/HM_Portal_Automation/src/test/java/HM_Portal_Automation/resource/geckodriver");
+		//System.setProperty("webdriver.firefox.bin", "/Applications/Firefox.app/Contents/MacOS/firefox-bin");
+		
+		//@cucumber.api.java.en.Given("User navigates to harvestmark portal")
+		
