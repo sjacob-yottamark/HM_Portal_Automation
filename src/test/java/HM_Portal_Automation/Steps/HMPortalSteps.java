@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 
 public class HMPortalSteps {
@@ -35,27 +36,24 @@ public class HMPortalSteps {
 		driver.close();
 		driver.quit();
 	}
-		
 	
+	// Login Screen
 	
-	//@cucumber.api.java.en.Given("User navigates to harvestmark portal")
 	@Given("User navigates to harvestmark portal")
-	public void user_navigates_to_harvestmark_portal() {
-	    //driver.get("https://qa.harvestmark.com/users/sign_in");
-	    driver.get("https://portal.harvestmark.com/users/sign_in");
-	    
+	public void user_navigates_to_harvestmark_portal() throws Throwable {
+	    driver.get("https://qa.harvestmark.com/users/sign_in");
+	    //driver.get("https://portal.harvestmark.com/users/sign_in"); 
 	}
 
 	@Then("^User enters the username as \"([^\"]*)\"")
-	public void user_enters_the_admin_username(String username) {
-	    
+	public void user_enters_the_admin_username(String username) throws Throwable {
 		//driver.findElement(By.xpath(".//*[@id='user_email']")).sendKeys("dev@yottamark.com");
 		driver.findElement(By.id("user_email")).sendKeys(username);
 	    
 	}
 
 	@Then("^User enters the passord as \"([^\"]*)\"")
-	public void user_enters_the_admin_password(String password ) {
+	public void user_enters_the_admin_password(String password ) throws Throwable{
 		//driver.findElement(By.xpath(".//*[@id='user_password']")).sendKeys("bbb123");
 		driver.findElement(By.id("user_password")).sendKeys(password);
 	    
@@ -70,7 +68,7 @@ public class HMPortalSteps {
 	}
 
 	@Then("User should be taken to the successful login page")
-	public void user_should_be_taken_to_the_successful_login_page() throws InterruptedException {
+	public void user_should_be_taken_to_the_successful_login_page() throws Throwable {
 		Thread.sleep(2000);
 		//WebElement Welcometext = driver.findElement(By.xpath("//a[contains(text(), 'Settings')]"));
 		WebElement Welcometext = driver.findElement(By.xpath("//h3[contains(text(), 'Welcome')]"));
@@ -78,17 +76,17 @@ public class HMPortalSteps {
 	    
 	}
 	
-	@Then("^I click on Companies link$")
-	public void i_click_on_Companies_link() throws Throwable {
+	// Check ALl the Company Links 
+	
+	@Then("^I click on Companies Link$")
+	public void i_click_on_Companies_Link() throws Throwable {
 		Thread.sleep(2000);
 		//driver.findElement(By.xpath(".//link[@id='Companies']")).click();
 		driver.findElement(By.linkText("Companies")).click();
-		
-		
 		WebElement companylist = driver.findElement(By.xpath("//h1[contains(text(), 'Listing Companies')]"));
 		Assert.assertEquals(true, companylist.isDisplayed());
 	}
-
+	
 	@Then("^I click on Code Explorer Link$")
 	public void i_click_on_Code_Explorer_Link() throws Throwable {
 		Thread.sleep(2000);
@@ -187,6 +185,8 @@ public class HMPortalSteps {
 		//WebElement settings = driver.findElement(By.xpath("//h1[contains(text(), 'Username')]"));
 		//Assert.assertEquals(true, settings.isDisplayed());
 	}
+	
+	// Insights Links
 	
 	@Then("^I click on Markets link$")
 	public void i_click_on_Markets_link() throws Throwable {
@@ -322,9 +322,6 @@ public class HMPortalSteps {
 		//WebElement NotificationTemplateManager = driver.findElement(By.xpath("//h1[contains(text(), 'Notification Template Manager')]"));
 		//Assert.assertEquals(true, NotificationTemplateManager.isDisplayed());
 	}
-
-
-
 
 
 
